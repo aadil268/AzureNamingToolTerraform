@@ -10,12 +10,6 @@ variable "location" {
   default     = "North Europe"
 }
 
-variable "app_service_plan_name" {
-  description = "The name of the App Service Plan"
-  type        = string
-  default     = "asp-azurenamingtool"
-}
-
 variable "app_service_plan_sku_tier" {
   description = "The SKU tier for the App Service Plan"
   type        = string
@@ -26,12 +20,6 @@ variable "app_service_plan_sku_size" {
   description = "The SKU size for the App Service Plan"
   type        = string
   default     = "S1"
-}
-
-variable "app_service_name" {
-  description = "The name of the App Service"
-  type        = string
-  default     = "app-azurenamingtool"
 }
 
 variable "subscription_id" {
