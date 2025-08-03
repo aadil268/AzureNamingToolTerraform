@@ -31,12 +31,15 @@ resource "azurerm_windows_web_app" "app_service" {
   https_only          = true
 
   site_config {
-    always_on                 = true
-    app_command_line          = "dotnet AzureNamingTool.dll"
+    always_on        = true
+    app_command_line = "dotnet AzureNamingTool.dll"
+
+    application_stack {
+      dotnet_version = "v8.0"
+    }
   }
 
   app_settings = {
     "WEBSITES_ENABLE_APP_SERVICE_STORAGE" = "false"
-    "DOTNET_VERSION"                      = "8.0"
   }
 }
