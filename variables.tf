@@ -7,7 +7,7 @@ variable "resource_group_name" {
 variable "location" {
   description = "The Azure region where resources will be created"
   type        = string
-  default     = "East US"
+  default     = "North Europe"
 }
 
 variable "app_service_plan_name" {
@@ -34,3 +34,7 @@ variable "app_service_name" {
   default     = "app-azurenamingtool"
 }
 
+variable "subscription_id" {
+  description = "The Azure subscription ID"
+  type        = string  
+}
