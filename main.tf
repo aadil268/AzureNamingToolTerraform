@@ -14,8 +14,9 @@ resource "azurerm_service_plan" "app_service_plan" {
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   os_type             = "Windows"
-  sku_name            = "${var.app_service_plan_sku_tier}_${var.app_service_plan_sku_size}"  # e.g. "P1v2"
+  sku_name            = var.app_service_plan_sku_size
 }
+
 
 resource "azurerm_windows_web_app" "app_service" {
   name                = var.app_service_name
