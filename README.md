@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This guide provides step-by-step instructions for deploying the Azure Naming Tool infrastructure using Terraform. This approach allows for Infrastructure as Code (IaC) principles, enabling automated, consistent, and repeatable deployments of the necessary Azure resources.
+This guide provides step-by-step instructions for deploying the Azure Naming Tool infrastructure using Terraform. This approach allows for Infrastructure as Code (IaC) principles, enabling automated, consistent, and repeatable deployments of the necessary Azure resources. The Terraform configuration now uses `azurerm_service_plan` and deploys a Linux Web App compatible with .NET 8.
 
 ## Prerequisites
 
